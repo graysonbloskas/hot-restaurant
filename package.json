@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/graysonbloskas/hot-restaurant#readme",
   "dependencies": {
-    "node_modules": "^0.0.1"
+    "express": "^4.17.1"
   }
 }
