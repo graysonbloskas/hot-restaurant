@@ -2,7 +2,7 @@
   "name": "hot-restaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/graysonbloskas/hot-restaurant/issues"
   },
-  "homepage": "https://github.com/graysonbloskas/hot-restaurant#readme"
+  "homepage": "https://github.com/graysonbloskas/hot-restaurant#readme",
+  "dependencies": {
+    "node_modules": "^0.0.1"
+  }
 }
