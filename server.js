@@ -56,7 +56,9 @@ const tables = [
 // Basic route that sends the user first to the AJAX Page
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'main.html')));
 
-app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'reserve.html')));
+app.get('/reserve', (req, res) => res.sendFile(path.join(__dirname, 'reserve.html')));
+
+app.get('/tables', (req, res) => res.sendFile(path.join(__dirname, 'tables.html')));
 
 // Displays all characters
 app.get('/api/tables', (req, res) => res.json(tables));
