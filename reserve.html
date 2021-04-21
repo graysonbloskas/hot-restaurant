@@ -1,0 +1,37 @@
+<!--Nico's addition to the script section-->
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+    
+      var newReservation = {
+        customerName: $("reserve-name").val().trim(),
+        phoneNumber: $("#reserve-phone").val().trim(),
+        customerEmail: $("#reserve-email").val().trim(),
+        customerID: $("#reserve-unique-id").val().trim()
+      };
+    
+      console.log(newReservation);
+    
+      $.post("/api/tables", newReservation, 
+      function(data) {
+    
+        if (data) {
+          alert("Excellent! Your reservation is confirmed!");
+        }
+    
+        else {
+          alert("We apologize, you've been added to the wait list");
+        }
+    
+        $("#reserve-name").val("");
+        $("#reserve-phone").val("");
+        $("#reserve-email").val("");
+        $("#reserve-unique-id").val("");
+    
+      });
+    
+    });
+    
+      </script>
