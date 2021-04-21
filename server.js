@@ -60,6 +60,8 @@ app.get('/reserve', (req, res) => res.sendFile(path.join(__dirname, 'reserve.htm
 
 app.get('/tables', (req, res) => res.sendFile(path.join(__dirname, 'tables.html')));
 
+app.get('/main', (req, res) => res.sendFile(path.join(__dirname, 'main.html')));
+
 // Displays all characters
 app.get('/api/tables', (req, res) => res.json(tables));
 
